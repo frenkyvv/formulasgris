@@ -1,26 +1,24 @@
 import React from "react"
 import styled from "styled-components"
-import Boton from "../components/botones/BotonLink"
-import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import DopaminaForm from "../components/formulas/DopaminaForm"
+import { Link } from "gatsby"
+import Boton from "../components/botones/BotonLink"
+import SodioForm from "../components/formulas/SodioCorregidoForm"
 
-function SecondPage() {
+function Pagina6() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
-          <SEO title="Dopamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
-            <Description>
-              Formula para calcular la dosis de Dopamina
-            </Description>
+            <SEO title="Sodio Corregido" />
+            <Title>Sodio Corregido</Title>
+            <Description>Formula para calcular el sodio corregido</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <DopaminaForm />
+            <SodioForm />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -32,8 +30,7 @@ function SecondPage() {
     </Layout>
   )
 }
-
-export default SecondPage
+export default Pagina6
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
@@ -53,12 +50,14 @@ const TextWrapper = styled.div`
 const Title = styled.h1`
   font-weight: bold;
   font-size: 30px;
+  color: white;
 `
 const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
   border-top: 2px solid black;
+  color: white;
 `
 const FormWrapper = styled.div`
   display: flex;

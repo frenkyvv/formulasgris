@@ -52,7 +52,7 @@ table {
 	border-spacing: 0;
 }
 a {
-  color: #3913B8;
-  font-weight: 600;
-  text-decoration: none;
+color: #050110;
+	font-weight: 600;
+text-underline-offset: -1px;
 }

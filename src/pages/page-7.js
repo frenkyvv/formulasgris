@@ -4,23 +4,21 @@ import Boton from "../components/botones/BotonLink"
 import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import DopaminaForm from "../components/formulas/DopaminaForm"
+import AlteplaseForm from "../components/formulas/AlteplaseForm"
 
-function SecondPage() {
+export default function Pagina7() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
           <SEO title="Dopamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
-            <Description>
-              Formula para calcular la dosis de Dopamina
-            </Description>
+            <Title>Dosis de Alteplase</Title>
+            <Description>Formula para el uso del Alteplase</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <DopaminaForm />
+            <AlteplaseForm />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -32,8 +30,6 @@ function SecondPage() {
     </Layout>
   )
 }
-
-export default SecondPage
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);

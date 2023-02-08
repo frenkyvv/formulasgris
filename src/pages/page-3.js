@@ -1,26 +1,27 @@
 import React from "react"
 import styled from "styled-components"
-import Boton from "../components/botones/BotonLink"
-import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
+import "bootstrap/dist/css/bootstrap.min.css"
 import SEO from "../components/layout/seo"
-import DopaminaForm from "../components/formulas/DopaminaForm"
+import { Link } from "gatsby"
+import Boton from "../components/botones/BotonLink"
+import DobutaminaForm from "../components/formulas/DobutaminaForm"
 
-function SecondPage() {
+function Pagina3() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
-          <SEO title="Dopamina" />
+          <SEO title="Dobutamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
+            <Title>Dosis de Dobutamina</Title>
             <Description>
-              Formula para calcular la dosis de Dopamina
+              Formula para calcular la dosis de Dobutamina
             </Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <DopaminaForm />
+            <DobutaminaForm />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -33,8 +34,7 @@ function SecondPage() {
   )
 }
 
-export default SecondPage
-
+export default Pagina3
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
 `

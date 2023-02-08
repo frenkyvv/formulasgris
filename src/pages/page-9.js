@@ -1,26 +1,25 @@
 import React from "react"
 import styled from "styled-components"
-import Boton from "../components/botones/BotonLink"
-import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
+import "bootstrap/dist/css/bootstrap.min.css"
 import SEO from "../components/layout/seo"
-import DopaminaForm from "../components/formulas/DopaminaForm"
+import { Link } from "gatsby"
+import Boton from "../components/botones/BotonLink"
+import SirForm from "../components/formulas/SirForm"
 
-function SecondPage() {
+function Pagina9() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
-          <SEO title="Dopamina" />
+          <SEO title="Dobutamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
-            <Description>
-              Formula para calcular la dosis de Dopamina
-            </Description>
+            <Title>SIR</Title>
+            <Description>Secuencia de Intubación Rápida</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <DopaminaForm />
+            <SirForm />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -33,14 +32,13 @@ function SecondPage() {
   )
 }
 
-export default SecondPage
-
+export default Pagina9
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  height: 100%;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -62,7 +60,6 @@ const Description = styled.p`
 `
 const FormWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
