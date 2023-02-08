@@ -396,7 +396,7 @@ class SirForm extends React.Component {
 }
 export default SirForm
 const Wrapper = styled.div`
-  max-width: 380px;
+  max-width: 400px;
 `
 const Medicamento = styled.p`
   font-size: 20px;

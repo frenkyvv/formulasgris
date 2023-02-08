@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button"
 import $ from "jquery"
 import DeficitHombre from "../components/formulas/DeficitHombre"
 import DeficitMujer from "../components/formulas/DeficitMujer"
+import Foot from "../components/sections/Footer"
 
 class Pagina4 extends React.Component {
   clickHombre(e) {
@@ -60,6 +61,9 @@ class Pagina4 extends React.Component {
               <Boton text="Back" />
             </Link>
           </BackBut>
+          <FooterDiv>
+        <Foot/>
+        </FooterDiv>
         </Wrapper>
       </Layout>
     )
@@ -69,10 +73,11 @@ export default Pagina4
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 800px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -111,4 +116,10 @@ const FormHombre = styled.div`
 `
 const FormMujer = styled.div`
   display: none;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `

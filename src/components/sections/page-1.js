@@ -2,13 +2,16 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Boton from "../botones/BotonLink"
+import Foot from "./Footer"
 
 class Main extends React.Component {
   render() {
     return (
       <Wrapper>
+      <TextTop>
         <Title>VallesMD</Title>
         <Subtitle>Bienvenidos a la App de VallesMD</Subtitle>
+        </TextTop>
         <ContentWrapper>
           <Link to="/page-2/">
             <Boton text="Dopamina" />
@@ -35,6 +38,9 @@ class Main extends React.Component {
             <Boton text="SIR" />
           </Link>
         </ContentWrapper>
+        <FooterDiv>
+        <Foot/>
+        </FooterDiv>
       </Wrapper>
     )
   }
@@ -42,14 +48,19 @@ class Main extends React.Component {
 
 export default Main
 const Wrapper = styled.div`
-  height: 600px;
+background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+background-size: cover;
+  height: 800px;
+
+`
+const TextTop = styled.div`
+padding-top: 60px;
 `
 const Title = styled.h1`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   width: 100%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
@@ -59,7 +70,7 @@ const Subtitle = styled.h2`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   width: 100%;
   padding-bottom: 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -73,4 +84,10 @@ const ContentWrapper = styled.div`
   gap: 30px;
   align-items: center;
   gap: 20px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `

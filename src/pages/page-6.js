@@ -5,6 +5,7 @@ import SEO from "../components/layout/seo"
 import { Link } from "gatsby"
 import Boton from "../components/botones/BotonLink"
 import SodioForm from "../components/formulas/SodioCorregidoForm"
+import Foot from "../components/sections/Footer"
 
 function Pagina6() {
   return (
@@ -26,6 +27,9 @@ function Pagina6() {
             <Boton text="Back" />
           </Link>
         </BackBut>
+        <FooterDiv>
+        <Foot/>
+        </FooterDiv>
       </Wrapper>
     </Layout>
   )
@@ -34,10 +38,11 @@ export default Pagina6
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 800px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  height: 400px;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -50,14 +55,14 @@ const TextWrapper = styled.div`
 const Title = styled.h1`
   font-weight: bold;
   font-size: 30px;
-  color: white;
+  color: black;
 `
 const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
   border-top: 2px solid black;
-  color: white;
+  color: black;
 `
 const FormWrapper = styled.div`
   display: flex;
@@ -72,4 +77,10 @@ const BackBut = styled.div`
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 50px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `

@@ -93,6 +93,7 @@ const Resultado = styled.div`
     text-align: center;
     max-width: 450px;
     color: white;
+    font-size: 15px;
   }
 `
 const ButtonDiv = styled.div`

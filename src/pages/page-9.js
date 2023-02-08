@@ -6,6 +6,7 @@ import SEO from "../components/layout/seo"
 import { Link } from "gatsby"
 import Boton from "../components/botones/BotonLink"
 import SirForm from "../components/formulas/SirForm"
+import Foot from "../components/sections/Footer"
 
 function Pagina9() {
   return (
@@ -21,12 +22,15 @@ function Pagina9() {
           <FormWrapper>
             <SirForm />
           </FormWrapper>
-        </ContentWrapper>
         <BackBut>
           <Link to="/">
             <Boton text="Back" />
           </Link>
         </BackBut>
+        </ContentWrapper>
+        <FooterDiv>
+        <Foot/>
+        </FooterDiv>
       </Wrapper>
     </Layout>
   )
@@ -35,10 +39,10 @@ function Pagina9() {
 export default Pagina9
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 2900px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 100%;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -70,4 +74,9 @@ const BackBut = styled.div`
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 50px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `

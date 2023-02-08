@@ -34,7 +34,7 @@ class DopaminaForm extends React.Component {
     document.querySelector("#textoPrevio").textContent = "El resultado es: "
     const res = (pes * dos) / 66.6
     const resultado = res.toFixed(2)
-    document.querySelector("#resultado").textContent = resultado
+    document.querySelector("#resultado").textContent = `${resultado} ml/hr`
     event.preventDefault()
   }
 

@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -62,13 +63,22 @@ class DeficitMujer extends React.Component {
             onChange={this.handleChange}
           />
         </Form.Group>
+        <ButtonDiv>
         <Button variant="primary" type="submit" value="Submit">
           Submit
         </Button>
         <div id="resultado"></div>
+        </ButtonDiv>
       </Form>
     )
   }
 }
 
 export default DeficitMujer
+
+const ButtonDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`

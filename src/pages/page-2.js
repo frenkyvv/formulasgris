@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 import DopaminaForm from "../components/formulas/DopaminaForm"
+import Foot from "../components/sections/Footer"
 
 function SecondPage() {
   return (
@@ -28,6 +29,9 @@ function SecondPage() {
             <Boton text="Back" />
           </Link>
         </BackBut>
+        <FooterDiv>
+        <Foot/>
+        </FooterDiv>
       </Wrapper>
     </Layout>
   )
@@ -37,10 +41,10 @@ export default SecondPage
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 800px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 500px;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -71,6 +75,11 @@ const BackBut = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `

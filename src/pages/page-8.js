@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button"
 import $ from "jquery"
 import OsmoPlasmaticaForm from "../components/formulas/OsmoPlas"
 import OsmoEfectiva from "../components/formulas/OsmoEfe"
+import Foot from "../components/sections/Footer"
 
 class Pagina8 extends React.Component {
   clickHombre(e) {
@@ -25,6 +26,7 @@ class Pagina8 extends React.Component {
           <ContentWrapper>
             <SEO title="Deficit de Agua" />
             <TextWrapper>
+          
               <Titulo>Osmolaridad</Titulo>
               <Description>Formula para calcular la Osmolaridad</Description>
               <div id="escoger">
@@ -52,12 +54,16 @@ class Pagina8 extends React.Component {
                 <OsmoEfectiva />
               </FormMujer>
             </TextWrapper>
-          </ContentWrapper>
+          
           <BackBut>
             <Link to="/">
               <Boton text="Back" />
             </Link>
           </BackBut>
+          </ContentWrapper>
+          <FooterDiv>
+        <Foot/>
+        </FooterDiv>
         </Wrapper>
       </Layout>
     )
@@ -67,10 +73,11 @@ export default Pagina8
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 800px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 600px;
+  height: 500px;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -109,4 +116,10 @@ const FormHombre = styled.div`
 `
 const FormMujer = styled.div`
   display: none;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `

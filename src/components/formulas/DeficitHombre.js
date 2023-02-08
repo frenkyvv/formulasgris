@@ -66,12 +66,14 @@ class DeficitHombre extends React.Component {
             onChange={this.handleChange}
           />
         </Form.Group>
+        <ButtonDiv>
         <Button id="But" variant="primary" type="submit" value="Submit">
           Submit
         </Button>
         <Footwrapp id="footwrapp">
           <div id="resulta"></div>
         </Footwrapp>
+        </ButtonDiv>
       </Form>
     )
   }
@@ -88,4 +90,10 @@ const Footwrapp = styled.div`
   #resulta {
     text-align: center;
   }
+`
+const ButtonDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `

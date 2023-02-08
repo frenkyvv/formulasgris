@@ -6,6 +6,7 @@ import SEO from "../components/layout/seo"
 import { Link } from "gatsby"
 import Boton from "../components/botones/BotonLink"
 import BicarbonatoForm from "../components/formulas/BicaForm"
+import Foot from "../components/sections/Footer"
 
 function Pagina5() {
   return (
@@ -29,6 +30,9 @@ function Pagina5() {
             <Boton text="Back" />
           </Link>
         </BackBut>
+        <FooterDiv>
+        <Foot/>
+        </FooterDiv>
       </Wrapper>
     </Layout>
   )
@@ -37,6 +41,7 @@ export default Pagina5
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  height: 800px;
 `
 const ContentWrapper = styled.div`
   width: 100%;
@@ -73,4 +78,10 @@ const BackBut = styled.div`
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 50px;
+`
+const FooterDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `
