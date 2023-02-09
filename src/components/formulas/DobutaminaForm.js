@@ -72,6 +72,7 @@ class DobutaminaForm extends React.Component {
           <Button variant="primary" type="submit" value="Submit">
             Submit
           </Button>
+          <br />
           <div id="textoPrevio"></div>
           <div id="resultado"></div>
         </ButtonDiv>
@@ -86,6 +87,7 @@ const ButtonDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 35px;
   max-width: 250px;
   #textoPrevio {
     padding-top: 5px;

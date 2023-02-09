@@ -54,6 +54,7 @@ export default Main
 const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
+  height: 800px;
 `
 const ContentWrapper1 = styled.div`
   margin: 0 auto;
