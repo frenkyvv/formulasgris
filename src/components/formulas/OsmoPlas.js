@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Form, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import $ from "jquery"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class OsmoPlasmaticaForm extends React.Component {
   constructor(props) {
@@ -48,45 +49,61 @@ class OsmoPlasmaticaForm extends React.Component {
     return (
       <Form>
         <div id="etiquetas">
-          <Form.Group className="mb-3" controlId="sodioInput">
-            <Form.Label>Sodio:</Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Sodio
+            </InputGroup.Text>
             <Form.Control
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-default"
               name="sodio"
               onChange={this.handleChange}
               value={this.state.sodio}
               type="number"
             />
-          </Form.Group>
+          </InputGroup>
 
-          <Form.Group className="mb-3" controlId="glucosaInput">
-            <Form.Label>Glucosa:</Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Glucosa
+            </InputGroup.Text>
             <Form.Control
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-default"
               name="glucosa"
               value={this.state.glucosa}
               onChange={this.handleChange}
               type="number"
             />
-          </Form.Group>
+          </InputGroup>
 
-          <Form.Group className="mb-3" controlId="potasioInput">
-            <Form.Label>Potasio:</Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Potasio
+            </InputGroup.Text>
             <Form.Control
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-default"
               name="potasio"
               type="number"
               value={this.state.potasio}
               onChange={this.handleChange}
             />
-          </Form.Group>
+          </InputGroup>
 
-          <Form.Group className="mb-3" controlId="ureaInput">
-            <Form.Label>Urea:</Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Urea
+            </InputGroup.Text>
             <Form.Control
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-default"
               name="urea"
               type="number"
               value={this.state.urea}
               onChange={this.handleChange}
             />
-          </Form.Group>
+          </InputGroup>
         </div>
         <ButtonDiv>
           <div id="botondes">

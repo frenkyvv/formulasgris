@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
 import $ from "jquery"
 import styled from "styled-components"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class OsmoEfectiva extends React.Component {
   constructor(props) {
@@ -45,32 +46,33 @@ class OsmoEfectiva extends React.Component {
       <Wrapper>
         <Form onSubmit={this.handleSubmit}>
           <div id="boton">
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Forma>
-                <div id="labels">
-                  <Form.Label>Sodio: </Form.Label>
-                </div>
-              </Forma>
+            <InputGroup className="mb-3">
+              <InputGroup.Text id="inputGroup-sizing-default">
+                Sodio
+              </InputGroup.Text>
               <Form.Control
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
                 name="nombre"
                 type="number"
                 value={this.state.name}
                 onChange={this.handleChange}
               />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Forma>
-                <div id="labels">
-                  <Form.Label>Glucosa: </Form.Label>
-                </div>
-              </Forma>
+            </InputGroup>
+
+            <InputGroup className="mb-3">
+              <InputGroup.Text id="inputGroup-sizing-default">
+                Glucosa
+              </InputGroup.Text>
               <Form.Control
+                aria-label="Default"
+                aria-describedby="inputGroup-sizing-default"
                 name="edad"
                 type="number"
                 value={this.state.edad}
                 onChange={this.handleChange}
               />
-            </Form.Group>
+            </InputGroup>
           </div>
           <ButtonDiv>
             <div id="botonesdes">

@@ -2,7 +2,7 @@ import React from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
-import $ from "jquery"
+import InputGroup from "react-bootstrap/InputGroup"
 import styled from "styled-components"
 
 class BicarbonatoForm extends React.Component {
@@ -55,24 +55,31 @@ class BicarbonatoForm extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Peso: </Form.Label>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">Peso</InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="nombre"
             type="number"
             value={this.state.name}
             onChange={this.handleChange}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Bicarbonato: </Form.Label>
+        </InputGroup>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">
+            Bicarbonato
+          </InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="edad"
             type="number"
             value={this.state.edad}
             onChange={this.handleChange}
           />
-        </Form.Group>
+        </InputGroup>
+
         <ButtonDiv>
           <Button variant="primary" type="submit" value="Submit">
             Submit

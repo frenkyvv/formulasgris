@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class SodioForm extends React.Component {
   constructor(props) {
@@ -43,24 +44,29 @@ class SodioForm extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Sodio: </Form.Label>
+        <InputGroup size="sm" className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-sm">Sodio</InputGroup.Text>
           <Form.Control
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
             name="nombre"
             type="number"
             value={this.state.name}
             onChange={this.handleChange}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Glucosa: </Form.Label>
+        </InputGroup>
+        <InputGroup size="sm" className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-sm">Glucosa</InputGroup.Text>
           <Form.Control
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
             name="edad"
             type="number"
             value={this.state.edad}
             onChange={this.handleChange}
           />
-        </Form.Group>
+        </InputGroup>
+
         <ButtonDiv>
           <Button variant="primary" type="submit" value="Submit">
             Submit

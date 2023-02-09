@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
 import $ from "jquery"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class DeficitHombre extends React.Component {
   constructor(props) {
@@ -48,31 +49,38 @@ class DeficitHombre extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Peso: </Form.Label>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">Peso</InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="nombre"
             type="number"
             value={this.state.name}
             onChange={this.handleChange}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Na serico: </Form.Label>
+        </InputGroup>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">
+            Na Serico
+          </InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="edad"
             type="number"
             value={this.state.edad}
             onChange={this.handleChange}
           />
-        </Form.Group>
+        </InputGroup>
+
         <ButtonDiv>
-        <Button id="But" variant="primary" type="submit" value="Submit">
-          Submit
-        </Button>
-        <Footwrapp id="footwrapp">
-          <div id="resulta"></div>
-        </Footwrapp>
+          <Button id="But" variant="primary" type="submit" value="Submit">
+            Submit
+          </Button>
+          <Footwrapp id="footwrapp">
+            <div id="resulta"></div>
+          </Footwrapp>
         </ButtonDiv>
       </Form>
     )

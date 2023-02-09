@@ -3,6 +3,7 @@ import styled from "styled-components"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class AlteplaseForm extends React.Component {
   constructor(props) {
@@ -44,15 +45,18 @@ class AlteplaseForm extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Peso: </Form.Label>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">Peso</InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="peso"
             type="number"
             value={this.state.peso}
             onChange={this.handleChange}
           />
-        </Form.Group>
+        </InputGroup>
+
         <ButtonDiv>
           <Button variant="primary" type="submit" value="Submit">
             Submit

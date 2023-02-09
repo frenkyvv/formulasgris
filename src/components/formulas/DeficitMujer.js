@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import "bootstrap/dist/css/bootstrap.min.css"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class DeficitMujer extends React.Component {
   constructor(props) {
@@ -45,29 +46,36 @@ class DeficitMujer extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Peso: </Form.Label>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">Peso</InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="nombre"
             type="number"
             value={this.state.name}
             onChange={this.handleChange}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Na serico: </Form.Label>
+        </InputGroup>
+        <InputGroup className="mb-3">
+          <InputGroup.Text id="inputGroup-sizing-default">
+            Na Serico
+          </InputGroup.Text>
           <Form.Control
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
             name="edad"
             type="number"
             value={this.state.edad}
             onChange={this.handleChange}
           />
-        </Form.Group>
+        </InputGroup>
+
         <ButtonDiv>
-        <Button variant="primary" type="submit" value="Submit">
-          Submit
-        </Button>
-        <div id="resultado"></div>
+          <Button variant="primary" type="submit" value="Submit">
+            Submit
+          </Button>
+          <div id="resultado"></div>
         </ButtonDiv>
       </Form>
     )

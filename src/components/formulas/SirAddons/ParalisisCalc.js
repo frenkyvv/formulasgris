@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Form, Button } from "react-bootstrap"
 import Table from "react-bootstrap/Table"
 import "bootstrap/dist/css/bootstrap.min.css"
+import InputGroup from "react-bootstrap/InputGroup"
 
 class ParaCalc extends React.Component {
   constructor(props) {
@@ -41,15 +42,20 @@ class ParaCalc extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <div id="inputDisplay">
-          <Form.Group className="mb-3" controlId="peso">
-            <Form.Label>Peso: </Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Peso
+            </InputGroup.Text>
             <Form.Control
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
               name="peso"
               type="number"
               value={this.state.peso}
               onChange={this.handleChange}
             />
-          </Form.Group>
+          </InputGroup>
+
           <Button variant="primary" type="submit" value="Submit">
             Calcular
           </Button>

@@ -315,12 +315,12 @@ class SirForm extends React.Component {
                   levantarla con la finalidad de que se logren visualizar las
                   cuerdas vocales.
                 </p>
-                <Imagen src="/images/1laringe.jpeg" />
+                <Imagen src="../static/images/1laringe.jpeg" />
                 <p>
                   Introducir el tubo a traves de las cuerdas vocales apoyandose
                   de la curvatura del mango
                 </p>
-                <Imagen src="/images/2tubo.jpeg" />
+                <Imagen src="../static/images/2tubo.jpeg" />
               </IntubacionText>
             </Accordion.Body>
           </Accordion.Item>
