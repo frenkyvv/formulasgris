@@ -15,6 +15,7 @@ class Main extends React.Component {
             <Title>VallesMD</Title>
             <Subtitle>Bienvenidos a la App de VallesMD</Subtitle>
           </TextTop>
+          <Line />
           <ContentWrapper>
             <Link to="/page-2/">
               <Boton text="Dopamina" />
@@ -51,6 +52,7 @@ class Main extends React.Component {
 }
 
 export default Main
+
 const Wrapper = styled.div`
   width: 100%;
   height: 800px;
@@ -58,11 +60,19 @@ const Wrapper = styled.div`
 const ContentWrapper1 = styled.div`
   margin: 0 auto;
   max-width: 400px;
-  display: grid;
 `
 const TextTop = styled.div`
   padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `
+const Line = styled.div`
+  border: 1px solid black;
+  margin-left: 20px;
+  width: 90%;
+`
+
 const Title = styled.h1`
   display: flex;
   align-items: center;
@@ -83,14 +93,14 @@ const Subtitle = styled.h2`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const ContentWrapper = styled.div`
-  border-top: 2px solid black;
   max-width: 100%;
   padding-top: 30px;
-  padding-left: 25px;
   display: grid;
+  grid-gap: 100px;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
   align-items: center;
+  grid-gap: 20px;
+  padding-left: 42px;
 `
 const FooterDiv = styled.div`
   display: flex;
