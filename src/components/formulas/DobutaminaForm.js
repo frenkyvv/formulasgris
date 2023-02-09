@@ -31,10 +31,11 @@ class DobutaminaForm extends React.Component {
   handleSubmit(event) {
     const pes = this.state.nombre
     const dos = this.state.edad
-    document.querySelector("#textoPrevio").textContent = "El resultado es: "
+    document.querySelector("#textoPrevio").textContent =
+      "Aforar 2 amp de Dobutamina (500mg) en 100ml de solución glucosada 5% e iniciar la infusión a: "
     const res = (pes * dos) / 83.33
     const resultado = res.toFixed(2)
-    document.querySelector("#resultado").textContent = resultado
+    document.querySelector("#resultado").textContent = `${resultado} ml/hr`
     event.preventDefault()
   }
 
@@ -78,4 +79,12 @@ const ButtonDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 250px;
+  #textoPrevio {
+    padding-top: 5px;
+    text-align: center;
+  }
+  #resultado {
+    color: blue;
+  }
 `
