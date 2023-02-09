@@ -17,7 +17,7 @@ function IndexPage() {
 
 export default IndexPage
 const Wrapper = styled.div`
-  background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

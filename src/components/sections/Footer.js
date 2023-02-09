@@ -12,6 +12,6 @@ function Foot(){
 export default Foot
 
 const Footer = styled.p`
-    font-size: 12px;
-    color: white;
+  font-size: 12px;
+  color: grey;
 `
