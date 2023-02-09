@@ -52,7 +52,6 @@ class Main extends React.Component {
 
 export default Main
 const Wrapper = styled.div`
-  overflow: hidden;
   width: 100%;
   height: 800px;
 `
