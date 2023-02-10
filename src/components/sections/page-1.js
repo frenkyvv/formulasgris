@@ -45,6 +45,9 @@ class Main extends React.Component {
             <Link to="/page-10/">
               <Boton text="Hiperton" />
             </Link>
+            <Link to="/page-11/">
+              <Boton text="Liquidos" />
+            </Link>
           </ContentWrapper>
           <FooterDiv>
             <Foot />
@@ -60,6 +63,7 @@ export default Main
 const Wrapper = styled.div`
   width: 100%;
   height: 800px;
+  position: relative;
 `
 const ContentWrapper1 = styled.div`
   margin: 0 auto;
