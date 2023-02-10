@@ -27,6 +27,7 @@ class Pagina4 extends React.Component {
             <SEO title="Deficit de Agua" />
             <TextWrapper>
               <Titulo>Deficit de Agua</Titulo>
+              <Line />
               <Description>
                 Formula para calcular el deficit de Agua
               </Description>
@@ -62,8 +63,8 @@ class Pagina4 extends React.Component {
             </Link>
           </BackBut>
           <FooterDiv>
-        <Foot/>
-        </FooterDiv>
+            <Foot />
+          </FooterDiv>
         </Wrapper>
       </Layout>
     )
@@ -77,7 +78,6 @@ const Wrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
@@ -95,7 +95,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
 `
 const Botones = styled.div`
   max-width: 300px;
@@ -122,4 +121,9 @@ const FooterDiv = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

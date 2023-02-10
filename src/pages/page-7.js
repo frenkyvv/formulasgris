@@ -15,6 +15,7 @@ export default function Pagina7() {
           <SEO title="Dopamina" />
           <TextWrapper>
             <Title>Dosis de Alteplase</Title>
+            <Line />
             <Description>Formula para el uso del Alteplase</Description>
           </TextWrapper>
           <br />
@@ -28,7 +29,7 @@ export default function Pagina7() {
           </Link>
         </BackBut>
         <FooterDiv>
-        <Foot/>
+          <Foot />
         </FooterDiv>
       </Wrapper>
     </Layout>
@@ -59,7 +60,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
 `
 const FormWrapper = styled.div`
   display: flex;
@@ -80,4 +80,9 @@ const FooterDiv = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

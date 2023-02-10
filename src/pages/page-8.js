@@ -26,8 +26,8 @@ class Pagina8 extends React.Component {
           <ContentWrapper>
             <SEO title="Deficit de Agua" />
             <TextWrapper>
-          
               <Titulo>Osmolaridad</Titulo>
+              <Line />
               <Description>Formula para calcular la Osmolaridad</Description>
               <div id="escoger">
                 <Botones>
@@ -54,16 +54,16 @@ class Pagina8 extends React.Component {
                 <OsmoEfectiva />
               </FormMujer>
             </TextWrapper>
-          
-          <BackBut>
-            <Link to="/">
-              <Boton text="Back" />
-            </Link>
-          </BackBut>
+
+            <BackBut>
+              <Link to="/">
+                <Boton text="Back" />
+              </Link>
+            </BackBut>
           </ContentWrapper>
           <FooterDiv>
-        <Foot/>
-        </FooterDiv>
+            <Foot />
+          </FooterDiv>
         </Wrapper>
       </Layout>
     )
@@ -95,7 +95,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
 `
 const Botones = styled.div`
   max-width: 300px;
@@ -122,4 +121,9 @@ const FooterDiv = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

@@ -16,20 +16,21 @@ function Pagina9() {
           <SEO title="Dobutamina" />
           <TextWrapper>
             <Title>SIR</Title>
+            <Line />
             <Description>Secuencia de Intubación Rápida</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
             <SirForm />
           </FormWrapper>
-        <BackBut>
-          <Link to="/">
-            <Boton text="Back" />
-          </Link>
-        </BackBut>
+          <BackBut>
+            <Link to="/">
+              <Boton text="Back" />
+            </Link>
+          </BackBut>
         </ContentWrapper>
         <FooterDiv>
-        <Foot/>
+          <Foot />
         </FooterDiv>
       </Wrapper>
     </Layout>
@@ -60,7 +61,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
 `
 const FormWrapper = styled.div`
   display: flex;
@@ -79,4 +79,9 @@ const FooterDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

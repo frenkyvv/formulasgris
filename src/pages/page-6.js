@@ -15,6 +15,7 @@ function Pagina6() {
           <TextWrapper>
             <SEO title="Sodio Corregido" />
             <Title>Sodio Corregido</Title>
+            <Line />
             <Description>Formula para calcular el sodio corregido</Description>
           </TextWrapper>
           <br />
@@ -28,7 +29,7 @@ function Pagina6() {
           </Link>
         </BackBut>
         <FooterDiv>
-        <Foot/>
+          <Foot />
         </FooterDiv>
       </Wrapper>
     </Layout>
@@ -61,7 +62,6 @@ const Description = styled.p`
   font-size: 13px;
   line-height: 130%;
   margin-top: 10px;
-  border-top: 2px solid black;
   color: black;
 `
 const FormWrapper = styled.div`
@@ -83,4 +83,9 @@ const FooterDiv = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+`
+const Line = styled.div`
+  height: 3px;
+  background-color: black;
+  width: 350px;
 `

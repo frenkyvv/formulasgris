@@ -1,29 +1,26 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout/layout"
-import "bootstrap/dist/css/bootstrap.min.css"
-import SEO from "../components/layout/seo"
-import { Link } from "gatsby"
 import Boton from "../components/botones/BotonLink"
-import BicarbonatoForm from "../components/formulas/BicaForm"
+import { Link } from "gatsby"
+import Layout from "../components/layout/layout"
+import SEO from "../components/layout/seo"
 import Foot from "../components/sections/Footer"
+import Hiperton from "../components/formulas/Hiperton"
 
-function Pagina5() {
+export default function Pagina10() {
   return (
     <Layout>
       <Wrapper>
         <ContentWrapper>
+          <SEO title="Dopamina" />
           <TextWrapper>
-            <SEO title="Bicarbonato" />
-            <Title>Deficit de Bicarbonato</Title>
+            <Title>Soluciones Hipertonicas</Title>
             <Line />
-            <Description>
-              Formula para calular el deficit de bicarbonato
-            </Description>
+            <Description>Concentraciones Hipertonicas</Description>
           </TextWrapper>
           <br />
           <FormWrapper>
-            <BicarbonatoForm />
+            <Hiperton />
           </FormWrapper>
         </ContentWrapper>
         <BackBut>
@@ -38,7 +35,6 @@ function Pagina5() {
     </Layout>
   )
 }
-export default Pagina5
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
@@ -46,7 +42,7 @@ const Wrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  height: 400px;
 `
 const TextWrapper = styled.div`
   padding-top: 30px;

@@ -13,9 +13,10 @@ class Main extends React.Component {
         <ContentWrapper1>
           <TextTop>
             <Title>VallesMD</Title>
+            <Line />
             <Subtitle>Bienvenidos a la App de VallesMD</Subtitle>
           </TextTop>
-          <Line />
+
           <ContentWrapper>
             <Link to="/page-2/">
               <Boton text="Dopamina" />
@@ -40,6 +41,9 @@ class Main extends React.Component {
             </Link>
             <Link to="/page-9/">
               <Boton text="SIR" />
+            </Link>
+            <Link to="/page-10/">
+              <Boton text="Hiperton" />
             </Link>
           </ContentWrapper>
           <FooterDiv>
@@ -68,9 +72,9 @@ const TextTop = styled.div`
   width: 100%;
 `
 const Line = styled.div`
-  border: 1px solid black;
-  margin-left: 20px;
-  width: 90%;
+  height: 3px;
+  background-color: black;
+  width: 400px;
 `
 
 const Title = styled.h1`
@@ -89,7 +93,7 @@ const Subtitle = styled.h2`
   justify-content: center;
   color: black;
   width: 100%;
-  padding-bottom: 10px;
+  padding-top: 15px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const ContentWrapper = styled.div`
