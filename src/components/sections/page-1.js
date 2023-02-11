@@ -64,6 +64,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 800px;
   position: relative;
+  overflow: hidden;
 `
 const ContentWrapper1 = styled.div`
   margin: 0 auto;
