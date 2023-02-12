@@ -42,13 +42,14 @@ const Wrapper = styled.div`
   height: 800px;
 `
 const ContentWrapper = styled.div`
-  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 `
 const TextWrapper = styled.div`
-  padding-top: 30px;
-  margin-left: 41%;
-  align-items: center;
   justify-content: center;
+  margin-top: -260px;
 `
 const Title = styled.h1`
   font-weight: bold;
@@ -60,11 +61,10 @@ const Description = styled.p`
   margin-top: 10px;
 `
 const FormWrapper = styled.div`
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
 `
 const BackBut = styled.div`
   display: flex;
