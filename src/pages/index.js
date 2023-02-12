@@ -16,11 +16,4 @@ function IndexPage() {
 }
 
 export default IndexPage
-const Wrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-  
+const Wrapper = styled.div``

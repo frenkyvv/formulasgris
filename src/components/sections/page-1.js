@@ -61,14 +61,12 @@ class Main extends React.Component {
 export default Main
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 800px;
-  position: relative;
+  position: fixed;
   overflow: hidden;
+  background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
 `
 const ContentWrapper1 = styled.div`
   margin: 0 auto;
-  max-width: 400px;
 `
 const TextTop = styled.div`
   padding-top: 60px;
@@ -102,7 +100,6 @@ const Subtitle = styled.h2`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const ContentWrapper = styled.div`
-  max-width: 100%;
   padding-top: 30px;
   display: grid;
   grid-gap: 100px;

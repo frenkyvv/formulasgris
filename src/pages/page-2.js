@@ -7,11 +7,13 @@ import SEO from "../components/layout/seo"
 import DopaminaForm from "../components/formulas/DopaminaForm"
 import Foot from "../components/sections/Footer"
 import Header from "../components/sections/Header"
+import WaveBackground from "../components/backgrounds/WaveBackground"
 
 function SecondPage() {
   return (
     <Layout>
       <Wrapper>
+        <WaveBackground />
         <ContentWrapper>
           <SEO title="Dopamina" />
           <TextWrapper>
@@ -39,6 +41,8 @@ export default SecondPage
 
 const Wrapper = styled.div`
   background: linear-gradient(180deg, #697ea0 0%, #69b6fd 100%);
+  position: fixed;
+  overflow: hidden;
   height: 800px;
 `
 const ContentWrapper = styled.div`
@@ -46,6 +50,7 @@ const ContentWrapper = styled.div`
   text-align: center;
   justify-content: center;
   display: flex;
+  width: 600px;
 `
 const TextWrapper = styled.div`
   justify-content: center;
