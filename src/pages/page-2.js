@@ -6,6 +6,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 import DopaminaForm from "../components/formulas/DopaminaForm"
 import Foot from "../components/sections/Footer"
+import Header from "../components/sections/Header"
 
 function SecondPage() {
   return (
@@ -14,11 +15,7 @@ function SecondPage() {
         <ContentWrapper>
           <SEO title="Dopamina" />
           <TextWrapper>
-            <Title>Dosis de Dopamina</Title>
-            <Line />
-            <Description>
-              Formula para calcular la dosis de Dopamina
-            </Description>
+            <Header />
           </TextWrapper>
           <br />
           <FormWrapper>
@@ -49,11 +46,9 @@ const ContentWrapper = styled.div`
 `
 const TextWrapper = styled.div`
   padding-top: 30px;
-  display: flex;
-  flex-direction: column;
+  margin-left: 41%;
   align-items: center;
   justify-content: center;
-  width: 100%;
 `
 const Title = styled.h1`
   font-weight: bold;
@@ -69,6 +64,7 @@ const FormWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 `
 const BackBut = styled.div`
   display: flex;
@@ -88,3 +84,11 @@ const Line = styled.div`
   background-color: black;
   width: 350px;
 `
+
+{
+  /* <Title>Dosis de Dopamina</Title>
+            <Line />
+            <Description>
+              Formula para calcular la dosis de Dopamina
+            </Description> */
+}
